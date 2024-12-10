@@ -1,0 +1,217 @@
+:root {
+    --primario: #97bd95;
+    --secundario: #4a7e4b;
+    --blanco: #ffffff;
+    --oscuro: #000;
+    --grey: #646161;
+    --greyDark: #433d3d;
+    --fuentePrincipal: "Josefin Sans", sans-serif;
+}
+
+/** Generales **/
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    background-color: var(--primario);
+}
+
+p {
+    font-size: 2rem;
+    font-family: var(--fuentePrincipal);
+    color: var(--blanco);
+}
+
+.titulo {
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+    color: var(--greyDark);
+    padding-top: 2rem;
+    margin: 2;
+    font-size: 5rem;
+}
+
+/** Navegacion **/
+.info-logo {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .info-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        padding-left: .5rem;
+    }
+}
+
+.logo {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 10rem;
+}
+
+.info {
+    text-decoration: none;
+    font-size: 4.5rem;
+    color: var(--oscuro);
+}
+
+.contenedor-nav {
+    display: flex;
+    flex-direction: column;
+    max-width: 120rem;
+    margin: 0 auto;
+    background-color: var(--secundario);
+}
+
+@media (min-width: 768px) {
+    .contenedor-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--secundario);  
+    }
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .nav {
+        flex-direction: row;
+    }
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: .5rem;
+    color: var(--oscuro);
+}
+
+
+.nav a:hover {
+    color: var(--blanco);
+}
+
+/** Enlaces **/
+
+.enlaces-padre {
+    padding: 4rem;
+    
+}
+
+.enlaces {
+    background-color: var(--primario);
+    border-radius: 1rem;
+    text-decoration: none;
+    font-size: 3.5rem;
+    color: var(--oscuro);
+    font-family: var(--fuentePrincipal);
+}
+
+.enlaces:hover {
+    color: var(--grey);
+}
+
+/** Titulo **/
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    font-size: 3rem;
+    gap: 1.5rem;
+}
+
+
+/** Card **/
+.contenedor-section {
+    background-color: var(--secundario);
+    max-width: 38rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem;
+}
+
+/** Card Grid **/
+.verduras-calor-invierno-plagas {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+   
+    gap: 2rem;
+
+    
+}
+@media (min-width: 768px) {
+    .verduras-calor-invierno-plagas {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 120rem;
+        margin: 0 auto;
+        gap: 2rem;
+    }
+}
+
+.verdura {
+    border-radius: 20rem;
+    width: 20rem;
+    height: 18rem;
+}
+
+.hot-col {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    padding: 1rem;
+    background-color: var(--secundario);
+    gap: 2rem;
+}
+@media (min-width: 768px) {
+    .hot-col {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2rem;
+        padding: 1rem;
+        background-color: var(--secundario);
+        gap: 2rem;
+    }
+}
+
+.parrafos {
+    display: flex;
+    flex-direction: column;
+}
+.parrafos p {
+    
+    margin: 0;
+}
+
+/** Footer **/
+.footer {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2.7rem;
+}
+
